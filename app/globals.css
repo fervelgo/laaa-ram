@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-neutral-900;
+  }
+}
+
+@layer utilities {
+  /* Smooth grayscale transition for hover effects */
+  .grayscale-transition {
+    transition: filter 0.3s ease-out, opacity 0.3s ease-out;
+  }
+}
